@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int a[50],small,large,i,n;
+printf("enter the number of element");
+scanf("%d",&n);
+printf("\enter the array element is");
+for(i=0;i<n;++i)
+    scanf("%d",&a[i]);
+    small=large=a[0];
+    for(i=1;i<n;++i)
+{
+    if (a[i]>large)
+        large=a[i];
+    if(a[i]<small)
+        small=a[i];
+}
+printf("the largest integar is%d",large);
+printf("the smallest intgar is %d",small);
+}
